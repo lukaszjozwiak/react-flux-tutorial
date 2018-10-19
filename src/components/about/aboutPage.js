@@ -5,21 +5,21 @@ var React = require('react');
 var About = React.createClass({
 
     statics: {
-        willTransitionTo: function (transition, params, query, callback) {
-            if (!confirm('Are you sure to enter?')) {
-                transition.abort();
-            } else {
-                callback();
-            }
-        },
+        // willTransitionTo: function (transition, params, query, callback) {
+        //     if (!confirm('Are you sure to enter?')) {
+        //         transition.abort();
+        //     } else {
+        //         callback();
+        //     }
+        // },
 
-        willTransitionFrom: function (transition, component, callback) {
-            if (!confirm('Are you sure to leave?')) {
-                transition.abort();
-            } else {
-                callback();
-            }
-        }        
+        // willTransitionFrom: function (transition, component, callback) {
+        //     if (!confirm('Are you sure to leave?')) {
+        //         transition.abort();
+        //     } else {
+        //         callback();
+        //     }
+        // }        
     },
 
     render: function () {
